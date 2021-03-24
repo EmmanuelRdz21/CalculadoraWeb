@@ -1,0 +1,55 @@
+<!************************************ DOCTYPE html ************************************>
+<html>
+
+<!**************************************** HEAD ****************************************>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculadora WEB APP</title>
+        <LINK href="src/style.css" rel="stylesheet"  type="text/css">
+    </head>
+
+<!**************************************** BODY ****************************************>
+
+    <body id="body">
+        <div class="contenedor">
+    	<h1 class="titulo"> Calculo matematico con potencia <h1>
+
+        <table border="0" class="entradas">
+            <tr>
+                <td >Potencia<b/></td>
+                <td ><input type="text" id="in_box"></td>
+            </tr>
+            <tr>
+                <td >Número</td>
+                <td ><input type="text" id="in_box2"></td>
+            </tr>
+
+        </table>
+
+
+    	<button onclick="camFondo()"; type="button" id="btn1" class="btn">Aceptar</button>
+    	<br/>
+    	<a id="out">Salida<a/></br>
+            <br>
+        <button type="button" id="btn2" class="btn">Info</button>
+        </br>
+    	<a id = "reloj" class="hora">00:00</a>
+
+        </div>
+
+        <!************************* HOJA DE ESTILO CSS **************************>
+       <!POPUP de info>
+       <div class="overlay" id="overlay-info">
+           <div class="pop1" id="pop_info">
+                <h3 class="titulo-pop">Bienvenido</h3>
+                <h4 class="msg" id="msg-pop">
+                	</h4>
+                <button type="button" id="btn3" class="btn">Aceptar</button>
+
+           </div>
+       </div>
+        
+        <script type="text/javascript" src="src/socket.io.js"></script>
+        <script type="text/javascript" src="src/codigo.js"></script>
+    <body>
+</html>
